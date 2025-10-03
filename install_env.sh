@@ -129,6 +129,7 @@ echo "=== Restarting cam-server ==="
 sudo systemctl restart cam-server || echo "cam-server service not found"
 
 sudo usermod -a -G dialout $USER
+python3 -m pip install --break-system-packages pynput
 
 # ---------------------------
 # STEP 11: Reboot
