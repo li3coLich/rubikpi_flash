@@ -128,6 +128,8 @@ fi
 echo "=== Restarting cam-server ==="
 sudo systemctl restart cam-server || echo "cam-server service not found"
 
+sudo usermod -a -G dialout $USER
+
 # ---------------------------
 # STEP 11: Reboot
 # ---------------------------
